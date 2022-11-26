@@ -1,0 +1,45 @@
+@import "~normalize.css";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ul {
+  padding-left: 0;
+}
+
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  padding: 0;
+  resize: vertical;
+}

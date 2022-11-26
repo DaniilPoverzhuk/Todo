@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-width: 300px;
+  max-width: 35vw;
+  height: 40vh;
+  background: red;
+  z-index: 10;
+
+  overflow: auto;
+
+  background: #141414;
+  border-radius: 10px;
+
+  &Title {
+    color: #fff;
+  }
+
+  &List {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+    list-style-type: none;
+  }
+}

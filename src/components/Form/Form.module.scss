@@ -1,0 +1,74 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px 15px;
+    background: none;
+    border: 2px solid #baa5e6;
+    border-radius: 5px;
+
+    color: #fff;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  &Bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputFile {
+    display: none;
+
+    & + label {
+      padding: 8px 15px;
+      background: none;
+      border: 2px solid #baa5e6;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+
+    label {
+      white-space: nowrap;
+      color: #fff;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@mixin input {
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.add {
+  @include input;
+  cursor: pointer;
+}
